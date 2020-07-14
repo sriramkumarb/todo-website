@@ -1,0 +1,81 @@
+h1{
+    color:black;
+    font-size: 75px;
+    text-align: center;
+}
+
+body{
+    background:white;
+    font-family: Bree serif;
+    color: #989898;
+}
+#todo-table{
+    position: relative;
+    width: 90%;
+    background:whitesmoke;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-color: goldenrod;
+    border-width: 5px;
+    border-radius:25px;
+}
+#todo-table form:after{
+    margin: 0;
+    content: '';
+    display: block;
+    clear: both;
+}
+input[type=text] {
+    width: 100%;
+    text-shadow: black;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: large;
+    display: inline-block;
+    box-sizing: border-box;
+    border-color: goldenrod;
+    border-width: 5px;
+    border-radius:30px;
+    text-align: justify;
+    font-family: unset;
+  }
+  
+  button[type=submit] {
+    margin-top: 2rem;
+    margin-left: 43%;
+    margin-right: 43%;
+    margin-bottom: 2rem;
+    padding: 10px;
+    border-color:goldenrod;
+    border-width: 5px;  
+    border-radius: 15px ;
+    cursor: pointer;
+    font-family: unset;
+  }
+  
+  button[type=submit]:hover {
+    background-color: goldenrod;
+  }
+  ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    width: 100%;
+    color: black;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border-radius:15px ;
+    border-width: 5px;
+}
+
+li:hover{
+    text-decoration: line-through;
+    background: rgba(0,0,0,0.2);
+}

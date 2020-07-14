@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML5,CSS,JavaScript,Nodejs">
+     <meta name="author" content="Sriramkumar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Simple Todo Website</title>
+    <link rel="stylesheet" href="/assets/styles.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree Serif">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="  crossorigin="anonymous"></script>
+    <script src="/assets/todo-list.js"></script>
+</head>
+<body>
+    <h1>My Todo List</h1> 
+   
+    <div id="todo-table">
+        <form>
+            <input type="text" name="item" placeholder="Add new item..." required>
+            <button type="submit">Add Item</button>
+        </form>
+        <ul>
+            <% for(var i=0; i  < todos.length; i++) { %>
+                <li><%= todos[i].item %></li>
+           <% } %>
+        </ul>
+    </div>
+
+</body>
+</html>
+
